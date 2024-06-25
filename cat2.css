@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+   background-color: #1c1c1c;
+   line-height: 2px;
+   font-family: 'Poppins';
+   color: #aea7a3;
+}
+
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgContainer{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slide_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    transition: 0.7s;
+
+   }
+
+.slide_div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    }
+
+
+
+.button{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transition: 0.7s; 
+    border-radius: 20px;
+    
+  } 
+
+    
+
+#slider1:target ~ .imgContainer #img1,
+#slider1.button ~ .content
+{
+    width: 300px;
+    height: 300px;
+    font-size: 1em;
+    color: #fff;
+    margin:2px;
+    }
+
+#slider2:target ~ .imgContainer #img2{
+/* #slider2:target ~ .imgContainer #button2{ */
+    width: 300px;
+    height: 300px;
+    /* background: linear-gradient(red, white); */
+} 
+
+#slider3:target ~ .imgContainer #img3{
+/* #slider3:target ~ .imgContainer #button3{ */
+    width: 300px;
+    height: 300px;
+    }
+
+#slider4:target ~ .imgContainer #img4,
+#slider4:target ~ .imgContainer #button4{
+    width: 300px;
+    height: 300px;
+    }
+
+#slider5:target ~ .imgContainer #img5,
+#slider5:target ~ .imgContainer #button5{
+    width: 300px;
+    height: 300px;
+    }
+
+#slider6:target ~ .imgContainer #img6,
+#slider6:target ~ .imgContainer #button6{
+    width: 300px;
+    height: 300px;
+    }
+
+#slider7:target ~ .imgContainer #img7,
+#slider7:target ~ .imgContainer #button7{
+    width: 300px;
+    height: 300px;
+   }
+
+#slider8:target ~ .imgContainer #img8,
+#slider8:target ~ .imgContainer #button8{
+    width: 300px;
+    height: 300px;
+   }
+
+#slider1:target ~ .imgContainer{
+    left: 40%;
+}
+#slider2:target ~ .imgContainer{
+    left: 30%;
+}
+#slider3:target ~ .imgContainer{
+    left: 20%;
+}
+#slider4:target ~ .imgContainer{
+    left: 10%;
+}
+#slider5:target ~ .imgContainer{
+    left: -30%;
+}
+#slider6:target ~ .imgContainer{
+    left: -40%;
+} 
+#slider7:target ~ .imgContainer{
+    left: -50%;
+}
+#slider8:target ~ .imgContainer{
+    left: -60%;
+}
+
+
+.img{height: 100px;
+background-color: ;
+border-radius: 50%;}
